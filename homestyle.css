@@ -1,0 +1,303 @@
+/* === Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+
+
+/* === Reset & Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff8e7;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Extra squiggle in body background */
+body::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -100px;
+  width: 300px;
+  height: 200px;
+  background: url('images/squiggle3.png') no-repeat center/contain;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* === Header === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Updated for a more fun font */
+.logo-text {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: #1a4a8e; /* make the logo text pop */
+    letter-spacing: 1px;
+  }
+
+nav a {
+  margin-left: 20px;
+  color: #203172;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* === Hero Section === */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fbb726;
+  padding: 10px 40px;
+  overflow: hidden;
+}
+
+/* Hero text positioned above images */
+.hero-text {
+  flex: 1;
+  padding-left: 60px;
+  position: relative;
+  z-index: 50;
+}
+
+.hero-text h1 {
+  font-family: 'Comic Neue', cursive;
+  font-size: 3rem;
+  color: #133360;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-family: 'Comic Neue', cursive;
+  
+  color: #115050;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-text a.hero-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #ff4f91;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hero image styles */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image img {
+  width: 70%;
+  max-width: none;
+  margin-right: -100px;
+  margin-top: -20px;
+  z-index: 10;
+}
+
+/* === Squiggles in Hero Section === */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: -29px;
+    width: 200px;
+    height: 800px;
+    background: url('images/squiggle1.png') no-repeat center/contain;
+    opacity: 0.9;
+    z-index: 0;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    right: 50px;
+    width: 900px;
+    height: 200px;
+    background: url('images/squiggle2.png') no-repeat center/contain;
+    opacity: 0.8;
+    z-index: 0;
+  }
+  
+  /* Additional Squiggles in Hero */
+  .hero .squiggle4,
+  .hero .squiggle5,
+  .hero .squiggle6,
+  .hero .squiggle7 {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.9;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .hero .squiggle4 {
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 150px;
+    background-image: url('images/squiggle3.png');
+  }
+  
+
+  
+  
+  
+  .hero .squiggle7 {
+    bottom: 40px;
+    right: -100px;
+    width: 220px;
+    height: 130px;
+    background-image: url('images/squiggle4.png');
+  }
+   
+  
+  
+
+
+/* === Services Section === */
+.services {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1;
+  margin: 10px;
+  padding: 25px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  min-height: 250px;
+  max-width: 300px;
+}
+
+.service-card img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+}
+
+/* Service card color schemes */
+.orange {
+  background: #ff8c42;
+  color: #333;
+}
+
+.blue {
+  background: #5bc0eb;
+  color: #333;
+}
+
+.yellow {
+  background: #fbd14b;
+  color: #333;
+}
+
+/* Additional service color (example) */
+.green {
+  background: #7ed957;
+  color: #333;
+}
+
+/* === Placeholder Class === */
+.placeholder-text {
+  font-style: italic;
+  color: rgb(255, 255, 255);
+}
+/* === Footer Styles === */
+.site-footer {
+  background-color: #3a3a3a;
+  color: white;
+  padding: 40px 30px 20px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fbd14b;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #fbd14b;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+
+

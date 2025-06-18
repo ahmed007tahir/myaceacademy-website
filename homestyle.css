@@ -74,7 +74,8 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fbb726;
+  background: url('images/background.png') no-repeat center center;
+  background-size: cover;
   padding: 10px 40px;
   overflow: hidden;
 }
@@ -88,7 +89,7 @@ nav a {
 }
 
 .hero-text h1 {
-  font-family: 'Comic Neue', cursive;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 3rem;
   color: #133360;
   line-height: 1.1;
@@ -96,7 +97,7 @@ nav a {
 }
 
 .hero-text p {
-  font-family: 'Comic Neue', cursive;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   
   color: #115050;
   font-size: 18px;
@@ -132,67 +133,7 @@ nav a {
   z-index: 10;
 }
 
-/* === Squiggles in Hero Section === */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 60px;
-    left: -29px;
-    width: 200px;
-    height: 800px;
-    background: url('images/squiggle1.png') no-repeat center/contain;
-    opacity: 0.9;
-    z-index: 0;
-  }
-  
-  .hero::after {
-    content: "";
-    position: absolute;
-    bottom: -80px;
-    right: 50px;
-    width: 900px;
-    height: 200px;
-    background: url('images/squiggle2.png') no-repeat center/contain;
-    opacity: 0.8;
-    z-index: 0;
-  }
-  
-  /* Additional Squiggles in Hero */
-  .hero .squiggle4,
-  .hero .squiggle5,
-  .hero .squiggle6,
-  .hero .squiggle7 {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.9;
-    z-index: 0;
-    pointer-events: none;
-  }
-  
-  .hero .squiggle4 {
-    top: 0;
-    right: 0;
-    width: 200px;
-    height: 150px;
-    background-image: url('images/squiggle3.png');
-  }
-  
 
-  
-  
-  
-  .hero .squiggle7 {
-    bottom: 40px;
-    right: -100px;
-    width: 220px;
-    height: 130px;
-    background-image: url('images/squiggle4.png');
-  }
-   
-  
-  
 
 
 /* === Services Section === */

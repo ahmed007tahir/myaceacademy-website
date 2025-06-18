@@ -3,81 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ACE Academy - Pricing</title>
-  <link rel="stylesheet" href="price.css"/>
-  <link rel="stylesheet" href="homestyle.css"/>
+  <title>ACE Academy | Pricing</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="homestyle.css" />
+  <link rel="stylesheet" href="price.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Header -->
-  <header>
+  <header class="site-header">
     <div class="logo">
       <img src="images/logo.png" alt="ACE Academy Logo" />
       <span class="logo-text">ACE ACADEMY</span>
     </div>
     <nav>
-      <a href="Price.html">Pricing</a>
+      <a href="index.html">Home</a>
       <a href="register.html">Register</a>
     </nav>
   </header>
 
-  <!-- Squiggles -->
-  <div class="squiggle squiggle1"></div>
-  <div class="squiggle squiggle2"></div>
+  <!-- Intro -->
+  <section class="intro full-width-section">
+  <div class="intro-box">
+    <h1>Our Pricing</h1>
+    <p class="intro-text">
+      Our academy’s mission is to provide affordable, high-quality tutoring for every student in Lincoln and the surrounding areas.  
+      We believe that every child deserves access to academic support that helps them grow in confidence and succeed in school.  
+      From Primary to GCSE, our packages are thoughtfully designed to suit different learning needs while remaining cost-effective for families.  
+      With transparent pricing and no hidden fees, you're always in control of your investment in your child’s education.
+    </p>
+  </div>
+</section>
+
 
   <!-- Pricing Section -->
   <section class="pricing-section">
-    <h1>Our Tuition Packages</h1>
+    <h2>Packages</h2>
+    <div class="card-container">
 
-    <p class="intro-text">We offer flexible, affordable tuition options tailored to every age group. Select a package to see more details.</p>
-
-    <!-- PRIMARY -->
-    <details class="price-dropdown primary">
-      <summary>📘 Primary Package (Years 1–6)</summary>
-      <div class="package-card">
-        <h3>£100 / Term</h3>
-        <p>Focused on building core skills in Maths & English through fun, engaging lessons. Weekly in-person support included.</p>
+      <div class="package-card primary">
+        <div class="card-header"></div>
+        <h3>Primary Package</h3>
+        <p><span class="price">£100 per term</span><br>Includes Maths & English for KS1–KS2</p>
       </div>
-    </details>
 
-    <!-- SECONDARY -->
-    <details class="price-dropdown secondary">
-      <summary>📗 Secondary Package (Years 7–8)</summary>
-      <div class="package-card">
-        <h3>£120 / Term</h3>
-        <p>Helps students solidify foundations while introducing more advanced concepts in core subjects like Maths, English & Science.</p>
+      <div class="package-card secondary">
+        <div class="card-header"></div>
+        <h3>Years 7–8 Package</h3>
+        <p><span class="price">£130 per term</span><br>Core subject support + progress tracking</p>
       </div>
-    </details>
 
-    <!-- GCSE -->
-    <details class="price-dropdown gcse">
-      <summary>📙 GCSE Package (Years 9–11)</summary>
-      <div class="package-card">
-        <h3>£138 / Term</h3>
-        <p>GCSE-focused sessions with exam prep, mock papers, and in-depth subject coverage across all exam boards.</p>
+      <div class="package-card gcse">
+        <div class="card-header"></div>
+        <h3>GCSE Package</h3>
+        <p><span class="price">£160 per term</span><br>Targeted GCSE preparation in Maths, English & Science</p>
       </div>
-    </details>
+
+      <div class="package-card bonus">
+        <div class="card-header"></div>
+        <h3>Exam Booster Package</h3>
+        <p><span class="price">£100 per term</span><br>Includes mock exams, revision strategies, and feedback reports</p>
+      </div>
+
+    </div>
   </section>
 
   <!-- Discounts Section -->
-  <section class="discounts-section">
-    <h2>Discounts & Offers</h2>
-    <p class="intro-text">Take advantage of our special launch offers and ongoing loyalty rewards.</p>
+  <section class="pricing-section">
+    <h2>Discounts</h2>
+    <div class="card-container">
 
-    <details class="discount-dropdown grand-opening">
-      <summary>🎉 50% OFF – Grand Opening</summary>
-      <p>Sign up before September and enjoy 50% off your first session. A great way to trial ACE Academy at half the cost!</p>
-    </details>
+      <div class="package-card grand">
+        <div class="card-header"></div>
+        <h3>50% Off Grand Opening</h3>
+        <p>Register before September and get 50% off your first term. Valid for new students only.</p>
+      </div>
 
-    <details class="discount-dropdown referral">
-      <summary>🤝 Refer a Friend</summary>
-      <p>When you refer a friend, both of you get £10 off your next term. It’s our way of saying thanks!</p>
-    </details>
+      <div class="package-card referral">
+        <div class="card-header"></div>
+        <h3>Refer a Friend</h3>
+        <p>You and your friend each get £10 off your next term when they sign up with your code.</p>
+      </div>
 
-    <details class="discount-dropdown loyalty">
-      <summary>🎯 Loyalty Discount</summary>
-      <p>Returning for another term? Enjoy a discount on your second and future terms with us. Your loyalty means the world to us!</p>
-    </details>
+      <div class="package-card loyalty">
+        <div class="card-header"></div>
+        <h3>Loyalty Discount</h3>
+        <p>Receive a 10% discount on your second term with us. Thank you for your continued trust!</p>
+      </div>
+
+    </div>
   </section>
 
   <!-- Footer -->
@@ -96,17 +114,21 @@
       </div>
       <div class="footer-section">
         <h4><a href="#">Our Prices</a></h4>
-        <p>Explore affordable tuition plans for all ages.</p>
+        <p>Affordable tuition plans</p>
       </div>
       <div class="footer-section">
         <h4><a href="#">Jobs</a></h4>
-        <p>Join our growing team of passionate tutors and staff!</p>
+        <p>Join our passionate team of tutors</p>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2025 ACE Academy. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Optional decorative squiggles -->
+  <div class="squiggle squiggle1"></div>
+  <div class="squiggle squiggle2"></div>
 
 </body>
 </html>

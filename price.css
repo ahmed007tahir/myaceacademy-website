@@ -1,96 +1,172 @@
 body {
   font-family: 'Quicksand', sans-serif;
-  background: #f2f4ff; /* soft lavender-blue */
   margin: 0;
   padding: 0;
-  color: #14213d; /* deep navy */
+  background: #f3f4f8;
+  color: #12124b;
+}
+
+.full-width-section {
+  background: #f3f4f8;
+  width: 100%;
+  padding: 50px 10;
+}
+
+.intro-box {
+  background: #c1c9ec;
+  border-color: #1a3b6e;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 2000px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  margin-bottom: -90px;
+  margin-top: -10px;
+}
+
+.intro-box h1 {
+  color: #1a3b6e;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.intro-box .intro-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2b2b2b;
+}
+
+.intro {
+  padding: 70px;
 }
 
 h1, h2 {
-  color: #0a1931; /* dark blue */
-  margin-left: 40px;
+  color: #1a3b6e;
 }
 
 .intro-text {
-  margin: 0 40px 20px;
+  max-width: 1500px;
   font-size: 1.1rem;
-  max-width: 800px;
-  color: #333;
+  margin-top: 10px;
 }
 
-.pricing-section, .discounts-section {
-  padding: 50px 100px 60px;
+.pricing-section {
+  padding: 40px;
 }
 
-/* DROPDOWN CONTAINERS */
-.price-dropdown,
-.discount-dropdown {
-  margin-bottom: 25px;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Package and Discount Card */
+.package-card {
+  position: relative;
+  background: #ffffff;
   border-radius: 12px;
-  overflow: hidden;
-  max-width: 80%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  padding-top: 50px;
+  width: 280px;
+  color: #12124b;
+}
+
+.package-card h3 {
+  margin-top: 0;
+}
+
+.package-card .card-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
   width: 100%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  background: #514848; /* clean white container */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
-/* DROPDOWN HEADERS */
-.price-dropdown summary,
-.discount-dropdown summary {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 18px 24px;
-  cursor: pointer;
-  list-style: none;
-  border-left: 10px solid transparent;
-  background: #f6b80e; /* soft blue */
-  color: #06214c;
+/* Colors */
+.primary .card-header     { background-color: #f4980f; }
+.secondary .card-header   { background-color: #33ade5; }
+.gcse .card-header        { background-color: #06d273; }
+.bonus .card-header       { background-color: #ba68c8; }
+.grand .card-header       { background-color: #ff7043; }
+.referral .card-header    { background-color: #42a5f5; }
+.loyalty .card-header     { background-color: #66bb6a; }
+
+
+.price {
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: #f4980f; /* matching the primary package accent */
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.primary .price     { color: #f4980f; }
+.secondary .price   { color: #33ade5; }
+.gcse .price        { color: #06d273; }
+.bonus .price       { color: #ba68c8; }
+.grand .price       { color: #ff7043; }
+.referral .price    { color: #42a5f5; }
+.loyalty .price     { color: #66bb6a; }
+
+
+
+
+/* Footer */
+.site-footer {
+  background-color: #3a3a3a;
+  color: white;
+  padding: 40px 30px 20px;
+  margin-top: 60px;
 }
 
-.price-dropdown.primary summary {
-  border-left-color: #4f8bc9; /* steel blue */
-}
-.price-dropdown.secondary summary {
-  border-left-color: #7acfc0; /* minty teal */
-}
-.price-dropdown.gcse summary {
-  border-left-color: #bc6ff1; /* violet */
-}
-.price-dropdown.elite summary {
-  border-left-color: #fca311; /* gold-orange */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.discount-dropdown.grand-opening summary {
-  border-left-color: #ff03ab; /* amber */
-}
-.discount-dropdown.referral summary {
-  border-left-color: #219ebc; /* soft blue */
-}
-.discount-dropdown.loyalty summary {
-  border-left-color: #8ac926; /* lime green */
+.footer-section {
+  flex: 1 1 200px;
 }
 
-/* DROPDOWN BODY / CONTENT */
-.package-card,
-.discount-dropdown p {
-  padding: 16px 24px;
-  background: #fffdc8;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-  border-top: 1px solid #ccc;
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fbd14b;
 }
 
-/* OVERRIDE homepage background if reused */
-body.homepage {
-  background: #f2f4ff !important;
+.footer-section a {
+  text-decoration: none;
+  color: #fbd14b;
 }
 
-/* DECORATIVE SQUIGGLES */
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+
+
+
+
+/* Squiggles */
 .squiggle {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
@@ -98,13 +174,13 @@ body.homepage {
 }
 
 .squiggle1 {
-  top: 120px;
-  right: 10px;
+  top: 150px;
+  right: 20px;
   background-image: url("images/squiggle1.png");
 }
 
 .squiggle2 {
-  top: 600px;
-  left: 10px;
+  bottom: 80px;
+  left: 30px;
   background-image: url("images/squiggle2.png");
 }

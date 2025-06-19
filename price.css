@@ -92,9 +92,9 @@ h1, h2 {
 .secondary .card-header   { background-color: #33ade5; }
 .gcse .card-header        { background-color: #06d273; }
 .bonus .card-header       { background-color: #ba68c8; }
-.grand .card-header       { background-color: #ff7043; }
-.referral .card-header    { background-color: #42a5f5; }
-.loyalty .card-header     { background-color: #66bb6a; }
+.grand .card-header       { background-color: #38a809; }
+.referral .card-header    { background-color: #f2e208; }
+.loyalty .card-header     { background-color: #9d0b0b; }
 
 
 .price {
@@ -108,9 +108,9 @@ h1, h2 {
 .secondary .price   { color: #33ade5; }
 .gcse .price        { color: #06d273; }
 .bonus .price       { color: #ba68c8; }
-.grand .price       { color: #ff7043; }
-.referral .price    { color: #42a5f5; }
-.loyalty .price     { color: #66bb6a; }
+.grand .price       { color: #38a809; }
+.referral .price    { color: #9d0b0b; }
+.loyalty .price     { color: #ede622; }
 
 
 

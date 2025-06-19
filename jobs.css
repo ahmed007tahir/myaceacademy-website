@@ -1,0 +1,163 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+  background: #e5eff0;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1a4a8e;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.logo-text {
+    font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;    /* Prevent items from wrapping */
+  gap: 20px;             /* Add spacing between links */
+  align-items: center;   /* Vertically center links */
+}
+
+nav a {
+  margin-left: 20px;
+  color: #203172;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .logo-text {
+    font-size: 28px;
+  }
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Jobs Section */
+.jobs {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.jobs h1 {
+  font-size: 36px;
+  color: #1a4a8e;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.job-list h2 {
+  font-size: 22px;
+  color: #ff4f91;
+  margin-top: 20px;
+}
+
+.job-list h2 a {
+  text-decoration: none;
+  color: #ff4f91;
+}
+
+.job-list h2 a:hover {
+  text-decoration: underline;
+}
+
+.job-list p {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #3a3a3a;
+  color: white;
+  padding: 40px 30px 20px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fbd14b;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #fbd14b;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ddd;
+}

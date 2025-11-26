@@ -70,6 +70,67 @@ a{text-decoration:none;color:inherit;}
   font-size:2.5rem; font-family:'Poppins', sans-serif; line-height:1.2;
 }
 
+
+@media (max-width: 768px) {
+  .navbar-custom {
+    flex-direction: column;
+    height: auto;
+    padding: 14px 20px;
+    border-radius: 28px;
+    
+  }
+
+  /* Reset positions */
+  .nav-left,
+  .nav-right,
+  .nav-center {
+    position: static;      /* stop absolute positioning */
+    transform: none;       /* remove translation */
+    width: 100%;           /* full width if needed */
+    justify-content: center;
+    margin: 0;             /* reset any auto margins */
+  }
+
+  /* Layout: Logo on left, links on right for row 1 */
+  .nav-center {
+    display: flex;
+    justify-content:center; /* logo left */
+    align-items: center;
+  }
+
+  .nav-left {
+    display: flex;
+    justify-content: center;   /* links right */
+    gap: 16px;
+  }
+
+  /* Row 2: icons centered */
+  .nav-right {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 8px;
+  }
+
+  /* Tap-friendly adjustments */
+  .nav-left .nav-link {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+
+  .circle-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2px;
+  }
+}
+
+
 /* ===== FAQ Section ===== */
 /* --- FAQ Section --- */
 .faq-section {
@@ -200,7 +261,7 @@ a{text-decoration:none;color:inherit;}
       </div>
 
       <div class="nav-center">
-        <img class="logo" src="./images/ace.png" alt="Ace Academy logo">
+        <img class="logo" src="./photos/ace.png" alt="Ace Academy logo">
       </div>
 
       <div class="nav-right">
@@ -220,7 +281,7 @@ a{text-decoration:none;color:inherit;}
   <!-- FAQ -->
   <h2 class="section-title">Your Questions Answered<br>Ace Academy Support</h2>
   <div class="faq-section">
-    <div class="faq-image"><img src="./images/FAQ1.jpg" alt="Ace Academy"></div>
+    <div class="faq-image"><img src="./photos/FAQ1.jpg" alt="Ace Academy"></div>
     <div class="faq-accordion">
       <div class="accordion-card">
         <div class="accordion-header">Q: How can services be arranged or inquiries made?</div>
@@ -357,4 +418,3 @@ setInterval(()=>{
 
 </body>
 </html>
-

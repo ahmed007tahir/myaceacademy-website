@@ -114,6 +114,7 @@ a{color:inherit;text-decoration:none}
   background: var(--accent);
 }
 
+
 /* ===== RIGHT ICONS & CONTACT BUTTON ===== */
 .circle-icon {
   display: inline-flex;
@@ -155,12 +156,57 @@ a{color:inherit;text-decoration:none}
   height: calc(var(--nav-height) + 24px);
 }
 
+/* ============================================
+   MOBILE NAVIGATION FIX
+   Converts the navbar into a stacked layout,
+   centers items, enlarges tap targets,
+   and prevents overlap.
+   ============================================ */
+@media (max-width: 768px) {
+
+  .navbar-custom {
+    flex-direction: column;
+    height: auto;
+    padding: 14px 20px;
+    border-radius: 28px;
+    gap: 5px;
+  }
+
+  /* Left/Right groups stack and center */
+  .nav-left,
+  .nav-right {
+    position: static;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-left .nav-link {
+    font-size: 1rem;       /* bigger tap-friendly text */
+    padding: 10px 14px;
+  }
+
+  .circle-icon {
+    width: 40px;
+    height: 40px;
+    
+  }
+
+  /* Logo gets slightly bigger for visibility */
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2px;
+
+  }
+}
+
+
 
 /* ===== HERO ===== */
 /* Adjust banner height here: change min-height to reduce top space */
 .header-hero{
   position:relative;
-  background-image: url('./images/herobg.jpg'); /* replace with your hero image */
+  background-image: url('./photos/herobg.jpg'); /* replace with your hero image */
   background-size:cover;background-position:center;
   min-height:87vh; /* <-- edit this value to change banner height */
   display:flex;align-items:flex-end;
@@ -284,6 +330,21 @@ a{color:inherit;text-decoration:none}
   font-size: 1rem;
    font-weight: 700;
   color: #333;
+}
+
+@media (max-width: 600px) {
+  .review-text {
+    font-size: 1.25rem;     /* larger handwriting font */
+    padding: 0 1rem;
+  }
+
+  .quote-mark {
+    font-size: 4rem;
+  }
+
+  .review-card {
+    padding: 2rem 1.2rem;
+  }
 }
 
 /* ===== CAROUSEL (slide-by-slide) ===== */
@@ -447,6 +508,5 @@ a{color:inherit;text-decoration:none}
   .footer-grid{flex-direction:column;align-items:flex-start}
   .nav-spacer{height:calc(var(--nav-height) + 48px)}
 }
-
 
 
